@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form{
+        #formCu{
             border: green 10px solid;
             text-align: center;
             width: 400px;
@@ -14,13 +14,18 @@
             background-color: tomato;
             color: white;
         }
-        table {
-            
+      
+        #formMoi {
+            margin-top: 50px;
+        }
+
+        .table-dk {
+            border: 1px solid grey
         }
     </style>
 </head>
 <body>
-    <form method="GET">
+    <form id='formCu' method="GET">
     <table>
         <h1>sở thích của bạn</h1>
         <tr>
@@ -51,10 +56,53 @@
           <tr>
               <td></td>
               <td><input type="submit" value="gửi thông tin"><input type="reset" value="nhập lại"></td>
-          </tr>   
-            
+          </tr>  
+          </table> 
+        </form>
+
        
-    </table>
-</form>
+ 
+
+    <form id="formMoi" action="get">
+        <table class="table-dk">
+            <tr><td><h1>Đăng ký học viên </h1></td></tr>
+            <tr><td>Họ Và Tên</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr><td>Ngày sinh</td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr><td>Giới Tính</td>
+                <td><input type="radio" name="gender" value="nam">nam<input type="radio" name="gender" value="nữ">nữ</td>
+                
+
+            </tr>
+            <tr><td>Địa chỉ</td>
+                <td><textarea id="w3review" name="w3review" rows="4" cols="22"></textarea></td>
+
+
+            </tr>
+            <tr><td>Lớp</td>
+                <td><select>
+                    <option value="chọn lớp">-chọn lớp-</option>
+                    <option value="b1">-b1-</option>
+                    <option value="b2">-b2-</option>
+                </select></td>
+            </tr>
+            <tr><td>Email</td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr><td>Điện Thoại</td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr>
+                <td><input type="submit" value="Đăng ký"><input type="reset" value="nhập lại"></td>
+            </tr>
+
+        </table>
+    </form>
 </body>
 </html>
