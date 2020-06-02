@@ -1,0 +1,38 @@
+.page-title{
+    color: blue;
+    text-align: center;
+}
+.calendar{
+    width: 50%;
+    margin: auto;
+
+}
+.vi-th{
+    background-color: yellow;
+    color: white;
+}
+.bg-red{
+background-color: red;
+}
+.bg-blue{
+background-color: blue;
+}
+.en-th th {
+    font-weight: normal;
+}
+.text-red {
+color: red;
+}
+.text-blue{
+color: blue;
+}
+.calendar {
+    border-collapse: collapse;
+}
+.calendar td {
+    border: 1px solid silver;
+    text-align: center;
+}
+.calendar td span {
+    font-weight: bold;
+}
