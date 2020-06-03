@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <h1>Caculator</h1>
+        <tr>
+            <td><input type="text" id="soThuNhat"></td>
+            <td><input type="text" id="soThuHai"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="Addition()" id="Addition" value="Addition(+)"></td>
+            <td><input type="button" onclick="Subtraction()" id="Subtraction" value="Subtraction(-)"></td>
+            <td><input type="button" onclick="Multiplication()" id="Multiplication" value="Subtraction(X)"></td>
+            <td><input type="button" onclick="Division()" id="Division" value="Division(/)"></td>
+        </tr>
+
+        <h3>Kết quả: <span id="oKetQua"></span></h3>
+        <script>
+
+            function Addition() {
+                var soThuNhat = document.getElementById("soThuNhat").value
+                var soThuHai = document.getElementById("soThuHai").value
+
+                var tong = parseInt(soThuNhat) + parseInt(soThuHai)
+
+                document.getElementById("oKetQua").innerHTML = tong
+            }
+
+            function Subtraction() {
+                var soThuNhat = document.getElementById("soThuNhat").value
+                var soThuHai = document.getElementById("soThuHai").value
+
+                var hieu = parseInt(soThuNhat) - parseInt(soThuHai)
+
+                document.getElementById("oKetQua").innerHTML = hieu
+
+            }
+            function Multiplication(){
+                var soThuNhat = document.getElementById("soThuNhat").value
+                var soThuHai = document.getElementById("soThuHai").value
+
+                var nhan = parseInt(soThuNhat) * parseInt(soThuHai)
+
+                document.getElementById("oKetQua").innerHTML = nhan
+
+            }
+            function Division(){
+                var soThuNhat = document.getElementById("soThuNhat").value
+                var soThuHai = document.getElementById("soThuHai").value
+
+                var chia = parseInt(soThuNhat) / parseInt(soThuHai)
+
+                document.getElementById("oKetQua").innerHTML = chia
+            }
+
+
+
+        </script>
+    </table>
+</body>
+
+</html>
