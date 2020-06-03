@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            
+        </tr>
+        <tr>
+            <td><input type="text" id = "USD"></td>
+            <td><select name="" id="Viet Nam">
+                <option value="">Viet Nam</option>
+            </select></td>
+            <td><select name="" id="">
+                <option value="">USD</option>
+            </select></td>
+            <td><input type="button" onclick="doitien()"value="Convert"></td>
+        </tr>
+    </table>
+    <div id="Tien"></div>
+    <script>
+        function doitien(){
+        var Tien = document.getElementById('USD').value;
+       document.getElementById("Tien").innerHTML = "Result: "+ Tien/23000;
+        }
+    </script>
+</body>
+</html>
