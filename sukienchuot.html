@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #anhcuatoi{
+        width:400px;
+        height:400px;}
+    </style>
+    </head>
+<body>
+    <form >
+        <img Id = 'anhcuatoi' src="dog.jpg" />
+        <p>Nhấn vào nút bên dưới để di chuyển hình ảnh sang phải</p>
+         <input type="button" value="bên phải" onclick="moveRight();"/>
+         <input type="button" value="bên trái" onclick="moveleft();"/>
+
+         
+    </form>
+    <script>
+        var anhan = document.getElementById("anhcuatoi");
+        function innit(){
+            anhan = document.getElementById("anhcuatoi");
+            anhan.style.position = 'relative';
+            anhan.style.left = '0px';
+        }
+        function moveRight() {
+    anhan.style.left = parseInt(anhan.style.left) + 10 + 'px';   
+    
+}
+function moveleft() {
+    anhan.style.left = parseInt(anhan.style.left) - 10 + 'px';
+}
+window.onload = innit();
+    </script>
+    
+</body>
+</html>
