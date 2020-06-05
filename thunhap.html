@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var thunhap = +prompt('nhâp')
+        console.log(thunhap)
+        var level
+        if (thunhap<5) {
+            level = 0
+            
+        }else if (thunhap < 10 ) {
+            level = 1
+        
+            }else if (thunhap < 18 ) {
+             level = 2
+            }else if (thunhap < 32 ) {
+            level = 3
+            }else if (thunhap >= 32) {
+                level = 4
+            }
+                switch( level){
+                    case 0  : 
+                      alert('thue = '+thunhap*0/100);
+                    break;
+                    case 1 :
+                    alert('thue = '+thunhap*5/100);
+                    break;
+                    case 2 :
+                    alert('thue = '+thunhap*10/100);
+                    break;
+                    case 3 :
+                    alert('thue = '+thunhap*20/100);
+                    break;
+                    case 4 :
+                    alert('thue = '+thunhap*30/100);
+                    break;
+                    default: 
+                    alert('khong hop le');
+                    break;
+                    
+                }   
+            
+    </script>
+</body>
+</html>
