@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table> 
+        <h1>bạn có yêu tôi không ?</h1>
+        <input type="button" value="yes" onclick="yes()" >
+        <input type="button" value="No" id="no" onmouseover="No()" style="position: relative " >
+    <script>
+        function yes(){
+            alert("bạn thật tốt")
+        }
+        function No(){
+            let chieudai= window.innerHeight;
+            let chieurong= window.innerWidth;
+            let vitri=document.getElementById("no");
+
+            let chieudaingaunhien= Math.floor(Math.random()*chieudai);
+            let chieurongngaunhien= Math.floor(Math.random()*chieurong);
+            document.getElementById("no").style.left= chieurongngaunhien +"px";
+            document.getElementById("no").style.top= chieudaingaunhien +"px";
+        }
+    </script>
+    </table>
+</body>
+</html>
