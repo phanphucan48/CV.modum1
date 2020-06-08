@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = +prompt ('nhập điểm kiểm tra');
+        var b = +prompt ('nhập điểm thi giữa kì');
+        var c = +prompt ('nhập điểm thi cuối kì');
+        var trungbinh = (a+2*b+3*c)/6
+        if (trungbinh >= 8) {
+            alert (trungbinh+'học sinh giỏi');
+            
+        }else if (trungbinh>= 6.5 ) { 
+            alert (trungbinh+'học sinh khá');
+            
+        }else if (trungbinh>=5) {
+            alert (trungbinh + 'học sinh trung bình');
+            
+        }else alert('học sinh yếu ');
+    </script>
+</body>
+</html>
