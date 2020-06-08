@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="an">
+    <input type="button" value="submit " onclick="hienthi()">
+    <p id="trang"></p>
+    <p></p>
+    <script>
+         
+        function hienthi() {
+            var thang = +document.getElementById("an").value;
+            switch (thang) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById('trang').innerHTML= "co 31 ngay";
+                    break;
+                    case 2:
+                    document.getElementById('trang').innerHTML= "có 28 ngày và 29 ngày";
+            }
+        }
+    </script>
+</body>
+
+</html>

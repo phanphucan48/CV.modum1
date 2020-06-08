@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var magiamgia = prompt (' nhập mã giam gia ');
+        var tonghoadon = +prompt (' nhập tổng hoá đơn');
+        var sotiengiam = 0;
+        switch  (magiamgia){
+            case 'G20' : sotiengiam = tonghoadon*20/100;
+            break;
+           case 'G10': sotiengiam = tonghoadon*10/100; break;
+           case 'G50': sotiengiam = tonghoadon*50/100;break;
+        }
+           var conlai = tonghoadon - sotiengiam;
+           alert ('tong gia tri thanh toán :'+  conlai);
+
+    </script>
+</body>
+</html>
