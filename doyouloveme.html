@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    
 </head>
 <body>
     <table> 
-        <h1>bạn có yêu tôi không ?</h1>
-        <input type="button" value="yes" onclick="yes()" >
-        <input type="button" value="No" id="no" onmouseover="No()" style="position: relative " >
+        <img src="phucan.jpg" id = 'an' height="300"width="300">
+        <h1>Bạn có yêu An không ?</h1>
+        <input type="button" value="Có" onclick="Có()"  >
+        <input type="button" value="khong" id="khong" onmouseover="khong()" style="position: relative " >
     <script>
-        function yes(){
-            alert("bạn thật tốt")
+        function Có(){
+            alert("Tôi cũng yêu bạn")
         }
-        function No(){
+        function khong(){
             let chieudai= window.innerHeight;
             let chieurong= window.innerWidth;
-            let vitri=document.getElementById("no");
+            let vitri=document.getElementById("khong");
 
             let chieudaingaunhien= Math.floor(Math.random()*chieudai);
             let chieurongngaunhien= Math.floor(Math.random()*chieurong);
-            document.getElementById("no").style.left= chieurongngaunhien +"px";
-            document.getElementById("no").style.top= chieudaingaunhien +"px";
+            document.getElementById("khong").style.left= chieurongngaunhien +"px";
+            document.getElementById("khong").style.top= chieudaingaunhien +"px";
         }
     </script>
     </table>
