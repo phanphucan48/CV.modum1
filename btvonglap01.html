@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
- <body>
-     <script>
+ <body><script>
+     var a = 0 ; 
+     var b = 1 ; 
+     var c ;
+     for ( var i = 0 ; i < 20 ; i ++ ){
+         c = a + b ; 
+         if (c % 5 ==0){
+             document.write(c);
+             break;
+         }
+         a=b;
+         b=c;
+         // tìm số đầu tiên chia hết cho 5
+     }
+ </script>
+
+
+
+
+     <!-- <script>
          var a = 0 ;
          var b = 1;
          var c ;
@@ -17,7 +35,7 @@
              b = c;
          }
          // Hiển thị ra 20 số trong dãy fibonacci đầu tiên
-     </script>
+     </script> -->
           
 
 
@@ -36,7 +54,7 @@
 
        
     }
-</script> --> -->
+</script> --> 
     
     
     
