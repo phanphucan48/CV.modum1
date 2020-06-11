@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tu điển nhật - việt</title>
+</head>
+<body>
+    <script>
+        var tiengnhat = ['山(yama)','海(umi)','木(ki)','川(kawa)','家(uchi)']　;
+        var tiengviet = ['núi', 'biển' , 'cây', 'sông', 'nhà'] ;
+        var nhapvao = prompt('nhập từ vào đây'); 
+        for (i =0 ; i < tiengviet.length ; i++){
+            if(nhapvao == tiengviet[i]){
+                document.write(`${nhapvao} nghĩa là ${tiengnhat[i]}`); break ;
+            }
+            if (i == tiengviet.length-1){
+                document.write ('không tìm thấy trong từ điển ');
+            }
+        }
+        // chuyển sang việt - nhật 
+
+    </script>
+</body>
+</html>
