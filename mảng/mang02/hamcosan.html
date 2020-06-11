@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mang = [0,2,5,4,6,8] ; 
+
+        var bien = [mang[0]];
+        for (var i = 1 ; i < mang.length ; i++){
+            if(mang[i-1]%2===0 && mang[i]%2===0){
+                bien.push('-');
+                bien.push(mang[i]);
+            }
+            else
+            {
+                bien.push(mang[i]);
+            }
+        }
+       for(let i = 0; i<bien.length; i++){
+           document.write(bien[i]);
+       }
+    </script>
+</body>
+
+</html>
