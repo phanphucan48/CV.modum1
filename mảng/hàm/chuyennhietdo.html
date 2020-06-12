@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyen nhiet do</title>
+</head>
+
+<body>
+    <form>
+        <p>Chuyển Đổi Độ C</p>
+        <label>chuyển đổi độ F sang độ C</label>
+        <input type="number" placeholder="độ F" id="an"><br>
+        <input type="button" value="đổi" onclick="nhietdo(an.value)">
+        <label>Độ F</label>
+        <label id="doc"></label>
+    </form>
+    <script>
+        function nhietdo(so) {
+            document.getElementById("doc").innerHTML = (so - 32) / 1.8;
+        }
+        // bấm nút nó sẽ chuyển đổi 
+    </script>
+
+
+</body>
+
+</html>
+
+<!-- <form>
+        <label>Độ F</label>
+        <input type="number" placeholder="độ  F" id="đôf" oninput="nhietdo(this.value)"
+            onchange="nhietdo(this.value)"><br>
+        <label>nhiệt độ c</label>
+        <label id="độ c"></label>
+
+    </form>
+
+    <script>
+        function nhietdo(so) {
+            document.getElementById("độ c").innerHTML = ((so - 32) / 1.8).toFixed(1);
+        }
+
+    </script> -->
