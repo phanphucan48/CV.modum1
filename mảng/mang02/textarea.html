@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>Fake text </h1>
+    <textarea onkeyup="ontypeText(this)" cols="30" rows="10"></textarea>
+</head>
+
+<body>
+    <script>
+        var fakeText = "Tôi là fan chelsea"
+        function ontypeText(textarea) {
+            console.log(textarea.value)
+            // lấy độ dài chuổi nhập vào 
+            // tạo mảng chuổi rỗng 
+            const arrayStr = [];
+            // kiểu nếu length nhỏ hơn độ dài fakeText thì đẩy chuổi phù hợp vào mảng arrayStr 
+            if (length <= fakeText.length) {
+                //đẩy số ký tự vào mảng arrayStr 
+                for (var i = o; i < length; i++) {
+                    arrayStr.push(fakeText[i])
+                }
+                // join chuỗi 
+                const result = arrayStr.join('');
+                // gắn value cho thẻ textarea 
+                textarea.value = result
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

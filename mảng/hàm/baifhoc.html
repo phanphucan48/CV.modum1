@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Arguments Array</title>
+</head>
+
+<body>
+    <script>
+        // function processConfirm(answer) {
+        //     let result = "";
+
+        //     if (answer) {
+        //         result = "Excellent. We'll play a nice game of chess.";
+
+        //     } else {
+        //         result = "Maybe later then.";
+        //     }
+        //     return result;
+        // }
+        // var confirmAnswer = confirm("Shall we play a game?");
+
+        // let theAnswer = processConfirm(confirmAnswer);
+
+        // alert(theAnswer);
+
+        function ham(traloi) {
+            var ketqua = "";
+            if (traloi) {
+                ketqua = "Thông minh. Chúng tôi sẽ chơi một ván cờ đẹp.";
+
+            } else {
+                ketqua = "có thể đợi một tí nhé ."
+            }
+            return ketqua;
+        }
+        var xacnhantraloi = confirm("Chúng ta sẽ chơi một trò chơi?");
+
+        var cautraloi = ham(xacnhantraloi);
+
+        alert(cautraloi);
+
+
+
+
+
+        // function ham() {
+        //     var thamso1 = arguments[0];
+        //     var thamso2 = arguments[1];
+        //     alert('tham số 1 là ' + thamso1);
+        //     alert('tham số 2 là' + thamso2);
+
+        // } ham("xin chào", "thế giới");
+
+
+    </script>
+</body>
+
+</html>
