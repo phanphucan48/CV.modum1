@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ngoisao1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        var ngoisao2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        var nhapvao = prompt('nhập tên ngôi sao');
+
+        function ngoisao(ngoisao1, ngoisao2, nhapvao) {
+            let i;
+            for (i = 0; i < ngoisao1.length; i++) {
+                if (nhapvao == ngoisao1[i]) {
+                    document.write(`${nhapvao} nghĩa là ${ngoisao2[i]}`);
+                    break;
+                }
+
+
+            }
+            if (i == ngoisao1.length) {
+                document.write('không tìm thấy');
+            }
+        }
+
+        ngoisao(ngoisao1, ngoisao2, nhapvao);   
+    </script>
+</body>
+
+</html>
