@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function snt(num) {
+            // Kiểm tra nếu số là 1 hoặc không chia hết cho 1 thì trả về false
+            if (num == 1 || num % 1 !== 0) {
+                return false;
+            }
+
+            // Lấy căn bậc 2 của số đầu vào
+            let sqrt = Math.sqrt(num)
+
+            // Kiểm tra từ 2 đến căn bậc 2 của số đầu vào, nếu chia hết cho bất kỳ 1 số nào thì trả về false
+            for (var i = 2; i <= sqrt; i++) {
+                if (num % i == 0) {
+                    return false
+                }
+            }
+
+            // Trả về true khi vòng lặp trên không có kết quả số chia hết
+            return true;
+        }
+
+        let num = +prompt("Nhập số cần kiểm tra:");
+
+        alert(num + ' ' + (snt(num) ? "Là số nguyên tố" : "Không phải số nguyên tố"));
+    </script>
+
+</body>
+
+</html>
