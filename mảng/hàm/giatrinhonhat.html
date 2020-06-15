@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr1 = [3, 5, 1, 8, -3, 7, 8];
+
+        var arr2 = [7, 12, 6, 9, 20, 56, 89];
+
+        var arr3 = [];
+
+        var arr4 = [0, 0, 0, 0, 0, 0];
+
+        function min(arr) {
+            if (arr.length == 0) {
+                let min = -1;
+                return min;
+            } else {
+                let min = arr[0]
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] < min) {
+                        min = arr[i]
+                    }
+                }
+                return min;
+            }
+
+        }
+        document.write(arr1 + 'giá trị nhỏ nhất là ' + min(arr1) + '<br>');
+        document.write(arr2 + 'giá trị nhỏ nhất là ' + min(arr2) + '<br>');
+        document.write(arr3 + 'giá trị nhỏ nhất là ' + min(arr3) + '<br>');
+        document.write(arr4 + 'giá trị nhỏ nhất là ' + min(arr4) + '<br>');
+
+
+
+    </script>
+</body>
+
+</html>
