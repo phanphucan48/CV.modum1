@@ -16,7 +16,10 @@
     <script>
         function dangso() {
             var num = document.getElementById('number').value;
-            document.getElementById('number').value = ++num;
+            document.getElementById('number').value = num;
+            num++;
+            document.getElementById('number').value = num;
+
 
         }
 
