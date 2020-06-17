@@ -9,19 +9,59 @@
 
 <body>
     <script>
-        function daonguoc() {
-            var sophantu = +prompt('nhập số phân tử vào');
-            var mang = [];
-            for (var i = 0; i < sophantu; i++) {
-                mang[i] = +prompt('nhập phần tử ');
+        let person = {
+            name: ['Bob', 'Smith'],
+            age: 32,
+            gender: 'male',
+            interests: ['music', 'skiing'],
+            bio: function () {
+                alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+            },
+            greeting: function () {
+                alert('Hi! I\'m ' + this.name[0] + '.');
             }
-            mang.reverse();
-            mang.toString();
-            alert(mang);
-        }
+        };
+        console.log(person)
 
 
-        daonguoc();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function daonguoc() {
+        //     var sophantu = +prompt('nhập số phân tử vào');
+        //     var mang = [];
+        //     for (var i = 0; i < sophantu; i++) {
+        //         mang[i] = +prompt('nhập phần tử ');
+        //     }
+        //     mang.reverse();
+        //     mang.toString();
+        //     alert(mang);
+        // }
+
+
+        // daonguoc();
     </script>
 </body>
 
