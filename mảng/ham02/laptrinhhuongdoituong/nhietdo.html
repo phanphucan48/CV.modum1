@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+
+        class Rectangle {
+            ChieuDai;
+            ChieuRong;
+            constructor(ChieuDai, ChieuRong) {
+                this.ChieuDai = ChieuDai;
+                this.ChieuRong = ChieuRong;
+            }
+            tinhDienTich() {
+                return this.ChieuDai * this.ChieuRong
+            }
+            tinhChuVi() {
+                return (this.ChieuDai + this.ChieuRong) * 2
+            }
+        }
+        var hcn = new Rectangle(10, 5);
+        document.write('Diện tích là' + hcn.tinhDienTich() + '</br>');
+        document.write('Chu vi là ' + hcn.tinhChuVi());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let Rectangle = function (chieuDai, chieuRong)
+        // this.chieuDai = chieuDai;
+        // this.chieuRong = chieuRong;
+        // this.tinhDienTich = function () {
+        //     return this.chieuDai * this.chieuRong
+        // }
+        // this.tinhChuvi = function () {
+        //     return  = (this.chieuDai + this.chieuRong) * 2
+        // }
+    </Script>
+</body>
+
+</html>
