@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Temperaratune() {
+            this.doC = 0;
+            this.setdoC = function (doC) {
+                if (doC >= -273) {
+                    this.doC = doC
+                }
+            }
+
+            this.chuyensangF = function () {
+                let doF = this.doC * 1.8 + 32;
+                return doF;
+            }
+            this.chuyensangk = function () {
+                this.dok = this.doC + 273;
+                return this.dok
+            }
+        }
+
+        let temperaratune = new Temperaratune();
+        temperaratune.setdoC(25)
+        document.write(temperaratune.chuyensangF());
+        document.write(temperaratune.chuyensangk());    
+    </script>
+</body>
+
+</html>
