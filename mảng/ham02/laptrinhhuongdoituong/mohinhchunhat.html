@@ -9,24 +9,22 @@
 
 <body>
     <Script>
+        let Rectangle = function (chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+            this.tinhdientich = function () {
+                return this.chieuDai * this.chieuRong;
+            }
+            this.tinhchuvi = function () {
+                return (this.chieuDai + this.chieuRong) * 2;
+            }
 
-        class Rectangle {
-            ChieuDai;
-            ChieuRong;
-            constructor(ChieuDai, ChieuRong) {
-                this.ChieuDai = ChieuDai;
-                this.ChieuRong = ChieuRong;
-            }
-            tinhDienTich() {
-                return this.ChieuDai * this.ChieuRong
-            }
-            tinhChuVi() {
-                return (this.ChieuDai + this.ChieuRong) * 2
-            }
         }
-        var hcn = new Rectangle(10, 5);
-        document.write('Diện tích là' + hcn.tinhDienTich() + '</br>');
-        document.write('Chu vi là ' + hcn.tinhChuVi());
+        let hinhchunhat = new Rectangle(20, 10);
+        let dientich = hinhchunhat.tinhdientich();
+        document.write('Dien tich hinh chu nhat la' + dientich + '<br>');
+        let chuvi = hinhchunhat.tinhchuvi();
+        document.write('chu vi hinh chu nhat la ' + chuvi);
 
 
 
