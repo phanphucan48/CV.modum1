@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Mobile = function (pin) {
+            if (pin >= 0 && pin <= 100) {
+                this.pin = pin;
+                this.soanthao = [];
+                this.hopthuden = [];
+                this.dagui = [];
+                this.battat = false;
+                this.turnon = function () {
+                    this.battat = true;
+                }
+                this.turnoff = function () {
+                    this.battat = false;
+                }
+                this.xacpin = function () {
+                    if (pin < 100) {
+                        this.pin++;
+                    }
+                }
+                this.soantinnhan = function (tinnhan) {
+                    if (this.battat = true) {
+                        this.soanthao.push(tinnhan);
+                        this.pin--;
+                    }
+                }
+                this.nhantinnhan = function (thuden) {
+                    this.hopthuden.push(thuden);
+                    this.pin--;
+                }
+                this.guitinnhan = function (guitin, mobile) {
+                    if (this.battat = true) {
+                        this.dagui.push(guitin);
+                        mobile.hopthuden.push(guitin);
+                        this.pin--;
+
+                    }
+                }
+                this.xemtinden = function () {
+                    if (this.battat = true) {
+                        console.log(this.hopthuden);
+                        this.pin--;
+                    }
+                }
+                this.xemtingui = function () {
+                    if (this.battat = true) {
+                        console.log(this.dagui);
+                        this.pin--;
+                    }
+                }
+            } else alert('khong hop le');
+
+        }
+        let nokia = new Mobile(80);
+        let iphone = new Mobile(90);
+        nokia.turnon();
+        iphone.turnon();
+        nokia.guitinnhan('Hello', iphone);
+        //nokia.soantinnhan('Hi');
+        //document.write(nokia.soanthao);
+
+
+
+    </script>
+</body>
+
+</html>
