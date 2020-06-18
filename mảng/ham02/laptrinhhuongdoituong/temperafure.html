@@ -9,28 +9,45 @@
 
 <body>
     <script>
-        function Temperaratune() {
-            this.doC = 0;
-            this.setdoC = function (doC) {
-                if (doC >= -273) {
-                    this.doC = doC
-                }
+        class Temperarature {
+            doC;
+            constructor(doC){
+                this.doC = doC
             }
-
-            this.chuyensangF = function () {
-                let doF = this.doC * 1.8 + 32;
-                return doF;
+            chuyenDoF(){
+                return this.doC * 1.8 +32
             }
-            this.chuyensangk = function () {
-                this.dok = this.doC + 273;
-                return this.dok
+            chuyenDoK(){
+                return this.doC+273
             }
         }
+        let Temperarature = new Temperarature(25);
+        document.write ( chuyenDoF , chuyenDoK  
 
-        let temperaratune = new Temperaratune();
-        temperaratune.setdoC(25)
-        document.write(temperaratune.chuyensangF());
-        document.write(temperaratune.chuyensangk());    
+
+
+        // function Temperaratune() {
+        //     this.doC = 0;
+        //     this.setdoC = function (doC) {
+        //         if (doC >= -273) {
+        //             this.doC = doC
+        //         }
+        //     }
+
+        //     this.chuyensangF = function () {
+        //         let doF = this.doC * 1.8 + 32;
+        //         return doF;
+        //     }
+        //     this.chuyensangk = function () {
+        //         this.dok = this.doC + 273;
+        //         return this.dok
+        //     }
+        // }
+
+        // let temperaratune = new Temperaratune();
+        // temperaratune.setdoC(25)
+        // document.write(temperaratune.chuyensangF());
+        // document.write(temperaratune.chuyensangk());    
     </script>
 </body>
 

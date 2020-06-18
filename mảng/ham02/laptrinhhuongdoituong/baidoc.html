@@ -8,14 +8,41 @@
 </head>
 
 <body>
-    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-    </canvas>
+    <!-- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    </canvas> -->
     <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.moveTo(0, 0);
-        ctx.lineTo(200, 100);
-        ctx.stroke();
+        // var c = document.getElementById("myCanvas");
+        // var ctx = c.getContext("2d");
+
+        // // Create gradient
+        // var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        // grd.addColorStop(3, "red");
+        // grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+        this.setDay = function (day) {
+            this.day = day;
+        }
+        this.setMonth = function (month) {
+            this.month = month;
+        }
+        this.setYear = function (year) {
+            this.year = year;
+        }
+        let date = new MyDate(2, 2, 2007);
+        let day = date.getDay(); // 2
+
+        let month = date.getMonth(); // 2
+
+        let year = date.getYear(); // 200
+        alert(day + "/" + month + "/" + year);
+        date.setDay(10);
+        date.setMonth(10);
+        date.setYear(2019);
+
+        alert(day + "/" + month + "/" + year);
     </script>
 </body>
 
