@@ -9,22 +9,22 @@
 
 <body>
     <script>
-        class Temperarature {
-            doC;
-            constructor(doC){
-                this.doC = doC
-            }
-            chuyenDoF(){
-                return this.doC * 1.8 +32
-            }
-            chuyenDoK(){
-                return this.doC+273
-            }
+        let Temperature = function (doC) {
+
+            if (doC >= -273) {
+                this.doC = doC;
+                this.chuyenF = function () {
+                    doF = doC * 1.8 + 32;
+                }
+                this.chuyenK = function () {
+                    doK = doC + 273
+                }
+            } else alert('Khong hop le !');
         }
-        let Temperarature = new Temperarature(25);
-        document.write ( chuyenDoF , chuyenDoK  
-
-
+        let temperature = new Temperature(275);
+        temperature.chuyenF();
+        temperature.chuyenK();
+        document.write('do F la : ' + doF + '<br> do k la :' + doK);
 
         // function Temperaratune() {
         //     this.doC = 0;
