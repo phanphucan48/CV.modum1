@@ -9,62 +9,128 @@
 
 <body>
     <script>
-        let Mobile = function (pin) {
-            if (pin >= 0 && pin <= 100) {
+        class Mobile {
+            status; pin; nhap; inbox; sent
+            constructor(pin) {
+                this.status = false;
                 this.pin = pin;
-                this.soanthao = [];
-                this.hopthuden = [];
-                this.dagui = [];
-                this.battat = false;
-                this.turnon = function () {
-                    this.battat = true;
-                }
-                this.turnoff = function () {
-                    this.battat = false;
-                }
-                this.xacpin = function () {
-                    if (pin < 100) {
-                        this.pin++;
-                    }
-                }
-                this.soantinnhan = function (tinnhan) {
-                    if (this.battat = true) {
-                        this.soanthao.push(tinnhan);
-                        this.pin--;
-                    }
-                }
-                this.nhantinnhan = function (thuden) {
-                    this.hopthuden.push(thuden);
-                    this.pin--;
-                }
-                this.guitinnhan = function (guitin, mobile) {
-                    if (this.battat = true) {
-                        this.dagui.push(guitin);
-                        mobile.hopthuden.push(guitin);
-                        this.pin--;
+                this.nhap = "";
+                this.inbox = [];
+                this.semt = [];
+            }
 
-                    }
+            ison() { return status };
+
+            toggleMode() { this.status = !this.status } // dau =! nghia la phu dinh
+
+            charge() {
+                if (this.pin < 100) {
+                    this.pin++;
                 }
-                this.xemtinden = function () {
-                    if (this.battat = true) {
-                        console.log(this.hopthuden);
-                        this.pin--;
-                    }
+            }
+
+            text(content) {
+                this.nhap = content;
+            }
+
+            getMsgInbox(index) {
+                this.giampin()
+
+                return this.inbox[index];
+            }
+
+            getMsgSent(index) {
+                this.giampin()
+
+                return this.sent[index];
+
+            }
+
+            receive(msg) {
+                this.inbox.unshift(msg);
+                this.giampin()
+
+            }
+
+            sent(mobi) {
+                mobi.receive(this.nhap);
+                this.sent.unshift(this.nhap);
+                this.giampin()
+            }
+
+            giampin() {
+                if (this.pin > 0) {
+                    this.pin--
                 }
-                this.xemtingui = function () {
-                    if (this.battat = true) {
-                        console.log(this.dagui);
-                        this.pin--;
-                    }
-                }
-            } else alert('khong hop le');
+            }
 
         }
-        let nokia = new Mobile(80);
-        let iphone = new Mobile(90);
-        nokia.turnon();
-        iphone.turnon();
-        nokia.guitinnhan('Hello', iphone);
+
+
+
+
+
+
+
+
+
+
+        // let Mobile = function (pin) {
+        //     if (pin >= 0 && pin <= 100) {
+        //         this.pin = pin;
+        //         this.soanthao = [];
+        //         this.hopthuden = [];
+        //         this.dagui = [];
+        //         this.battat = false;
+        //         this.turnon = function () {
+        //             this.battat = true;
+        //         }
+        //         this.turnoff = function () {
+        //             this.battat = false;
+        //         }
+        //         this.xacpin = function () {
+        //             if (pin < 100) {
+        //                 this.pin++;
+        //             }
+        //         }
+        //         this.soantinnhan = function (tinnhan) {
+        //             if (this.battat = true) {
+        //                 this.soanthao.push(tinnhan);
+        //                 this.pin--;
+        //             }
+        //         }
+        //         this.nhantinnhan = function (thuden) {
+        //             this.hopthuden.push(thuden);
+        //             this.pin--;
+        //         }
+        //         this.guitinnhan = function (guitin, mobile) {
+        //             if (this.battat = true) {
+        //                 this.dagui.push(guitin);
+        //                 mobile.hopthuden.push(guitin);
+        //                 this.pin--;
+
+        //             }
+        //         }
+        //         this.xemtinden = function () {
+        //             if (this.battat = true) {
+        //                 console.log(this.hopthuden);
+        //                 this.pin--;
+        //             }
+        //         }
+        //         this.xemtingui = function () {
+        //             if (this.battat = true) {
+        //                 console.log(this.dagui);
+        //                 this.pin--;
+        //             }
+        //         }
+        //     } else alert('khong hop le');
+
+        // }
+        // let nokia = new Mobile(80);
+        // let iphone = new Mobile(90);
+        // nokia.turnon();
+        // iphone.turnon();
+        // nokia.guitinnhan('Hello', iphone);
         //nokia.soantinnhan('Hi');
         //document.write(nokia.soanthao);
 
