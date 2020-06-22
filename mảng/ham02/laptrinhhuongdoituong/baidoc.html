@@ -5,12 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #ttt-game {
+            display: grid;
+            max-width: 600px;
+            margin: 0 auto;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 5px;
+        }
+
+        #ttt-game div {
+            font-size: 3em;
+            text-align: center;
+            background: #eee;
+            padding: 50px;
+        }
+
+        #ttt-game div.player {
+            background: #c2e3ff;
+        }
+
+        #ttt-game div.computer {
+            background: #ffebeb;
+        }
+    </style>
 </head>
 
 <body>
     <!-- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
     </canvas> -->
     <script>
+
+
+
+
+
         // var c = document.getElementById("myCanvas");
         // var ctx = c.getContext("2d");
 
@@ -20,29 +49,29 @@
         // grd.addColorStop(1, "white");
 
         // Fill with gradient
-        ctx.fillStyle = grd;
-        ctx.fillRect(10, 10, 150, 80);
-        this.setDay = function (day) {
-            this.day = day;
-        }
-        this.setMonth = function (month) {
-            this.month = month;
-        }
-        this.setYear = function (year) {
-            this.year = year;
-        }
-        let date = new MyDate(2, 2, 2007);
-        let day = date.getDay(); // 2
+        // ctx.fillStyle = grd;
+        // ctx.fillRect(10, 10, 150, 80);
+        // this.setDay = function (day) {
+        //     this.day = day;
+        // }
+        // this.setMonth = function (month) {
+        //     this.month = month;
+        // }
+        // this.setYear = function (year) {
+        //     this.year = year;
+        // }
+        // let date = new MyDate(2, 2, 2007);
+        // let day = date.getDay(); // 2
 
-        let month = date.getMonth(); // 2
+        // let month = date.getMonth(); // 2
 
-        let year = date.getYear(); // 200
-        alert(day + "/" + month + "/" + year);
-        date.setDay(10);
-        date.setMonth(10);
-        date.setYear(2019);
+        // let year = date.getYear(); // 200
+        // alert(day + "/" + month + "/" + year);
+        // date.setDay(10);
+        // date.setMonth(10);
+        // date.setYear(2019);
 
-        alert(day + "/" + month + "/" + year);
+        // alert(day + "/" + month + "/" + year);
     </script>
 </body>
 
