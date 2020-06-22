@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let SwitchButton = function () {
+            this.status = false;
+
+            this.connectToLamp = function (lamp) {
+                this.lamp = lamp;
+                this.lamp.status = this.status;
+            }
+            this.switchOff = function () {
+                this.status = false;
+                this.lamp.status = this.status;
+            }
+            this.switchOn = function () {
+                this.status = true;
+                this.lamp.status = this.status;
+            }
+        }
+        let Lamp = function () {
+            this.status = false;
+        }
+        let switchButton = new SwitchButton();
+        let lamp = new Lamp();
+
+
+    </script>
+</body>
+
+</html>
