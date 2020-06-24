@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id='hienthi'></p><br>
+    <canvas id='canvas' width="300px" height="300px" style="border:1xp solid #d3d3d3"></canvas>
+    <script>
+        // đề 
+        // Cricle
+        // radius : Int
+        // color : String
+        // cirde (radius,color):void
+        // get area (): float 
+        // get Perimecter(): float
+        // draw ( canvar , x,y)
+
+
+
+
+
+
+
+        class Cricle {
+            radius;
+            color;
+            constructor(radius, color) {
+                this.radius = radius;
+                this.color = color;
+            }
+            getArea() {     // tính diện tích hình tròn 
+                return this.radius * this.radius * 3.14;
+            }
+            getPerimecter() { // tính chu vi 
+                return this.radius * 2 * 3.14;
+            }
+            draw(canvas, x, y) {
+                let ctx = canvas.getContext("2d");
+                ctx.beginPath()
+                ctx.arc(x, y, this.radius, 0, 2. * Math.PI);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+
+        var cricle = new Cricle(50, "orange");
+
+        let canvas = document.getElementById("canvas")
+        cricle.draw(canvas, 100, 100);
+        console.log(cricle.getArea());
+        console.log(cricle.getPerimecter());
+        document.getElementById('hienthi').innerHTML = ` chu vi : ${cricle.getArea()};
+        Dien tích : ${cricle.getPerimecter()}`;
+    </script>
+</body>
+
+</html>

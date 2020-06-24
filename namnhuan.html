@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Năm Nhuận</title>
 </head>
+
 <body>
-   <script>
-    var  nam = +prompt('nam nhuan');
-    if ((nam % 4  ==0 &&  nam % 100 !=0) ||(nam % 400 ==0)){
-        alert (nam+('la nam nhuan'))
-    }else alert (nam +('khong phai nam nhuan'))
-        
-        
-   
-   </script>
+
+    <script>
+
+        var nam = +prompt('nhập năm ');
+
+        while (nam < 0 || !Number.isInteger(nam)) {
+            nam = +prompt('xin nhập lại năm ')
+        };
+
+        function namnhuan(so) {
+            check = false;
+            if (so % 4 == 0 && so % 100 != 0 || so % 400 == 0) {
+                return check = true;
+
+            } return check = false;
+
+        }
+
+        if (namnhuan(nam)) {
+            alert(nam + 'là năm nhuận');
+
+        } else alert(nam + 'là không phải năm nhuận ');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // if ((nam % 4  ==0 &&  nam % 100 !=0) ||(nam % 400 ==0)){
+    //     alert (nam+('la nam nhuan'))
+    // }else alert (nam +('khong phai nam nhuan'))
+
+
+
+    </script>
 </body>
+
 </html>
