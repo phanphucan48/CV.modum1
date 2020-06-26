@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id='hienthi'></p><br>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+
+    </canvas>
+    <script>
+        class Circle {
+            x;
+            y;
+            radius;
+            color;
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+            }
+            render(canvas) {
+
+
+
+
+                var c = document.getElementById(canvas);
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                // ctx.strokeStyle = this.color;
+                // ctx.stroke();
+            }
+        }
+        let circle = new Circle(40, 50, 30, '#FF3300');
+        circle.render("myCanvas");
+    </script>
+</body>
+
+</html>

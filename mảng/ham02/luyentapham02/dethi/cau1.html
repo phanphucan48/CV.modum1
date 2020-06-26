@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findMaxScore(arr) {
+            if (!Array.isArray(arr) || arr.length == 0) {
+                return 'Khong phai hoac mang khong co gia tri';
+            }
+            let max = arr[0];
+            let index = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (max < arr[i]) {
+                    max = arr[i];
+                    index = i;
+                }
+            }
+            let c = max
+            return c;
+        }
+        var x = [10, 5, 2, 8, -1, 6, 8];
+        var x1 = [2, 4, 0, 5, 1];
+        var x2 = [8, 6, 2, 6, 1, 1, 4];
+        var x3 = [];
+        var x4 = "sdfd";
+
+
+        document.write(findMaxScore(x) + "là diểm số cao nhất trong mảng " + '<br>');
+        document.write(findMaxScore(x1) + "là diểm số cao nhất trong mảng" + '<br>');
+        document.write(findMaxScore(x2) + "là diểm số cao nhất trong mảng" + '<br>');
+        document.write(findMaxScore(x3) + "là diểm số cao nhất trong mảng" + '<br>');
+        document.write(findMaxScore(x4) + "là diểm số cao nhất trong mảng" + '<br>');
+    </script>
+</body>
+
+</html>

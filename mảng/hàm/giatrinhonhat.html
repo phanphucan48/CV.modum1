@@ -18,23 +18,23 @@
         var arr4 = [0, 0, 0, 0, 0, 0];
 
         function min(arr) {
-            if (arr.length == 0) {
-                let min = -1;
-                return min;
-            } else {
-                let min = arr[0]
-                for (let i = 0; i < arr.length; i++) {
-                    if (arr[i] < min) {
-                        min = arr[i]
-                    }
-                }
-                return min;
+            if (!Array.isArray(arr) || arr.length == 0) {
+                return 'Khong phai hoac mang khong co gia tri';
             }
-
+            let min = arr[0];
+            let index = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (min > arr[i]) {
+                    min = arr[i];
+                    index = i;
+                }
+            }
+            let c = min + " nằm ở vị trí " + (index + 1);
+            return c;
         }
         document.write(arr1 + 'giá trị nhỏ nhất là ' + min(arr1) + '<br>');
         document.write(arr2 + 'giá trị nhỏ nhất là ' + min(arr2) + '<br>');
-        document.write(arr3 + 'giá trị nhỏ nhất là ' + min(arr3) + '<br>');
+        document.write(arr3 + min(arr3) + '<br>');
         document.write(arr4 + 'giá trị nhỏ nhất là ' + min(arr4) + '<br>');
 
 

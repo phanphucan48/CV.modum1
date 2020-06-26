@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        tryRemoveFromArray = (arr, index) => {
+            if (Array.isArray(arr) && arr.length > 0) {
+                for (let i = 0; i < arr.length; i++) {
+                    if (i == index) {
+                        for (let j = index; j < arr.length; j++) {
+                            arr[j] = arr[j + 1];
+                        }
+                        arr.pop();
+                    }
+                }
+                return arr;
+            }
+        }
+        let arr = [12, 6, 3, 7, 21, 5, 7];
+        let a = [12, 6, 3, 7, 21, 5, 7];
+        let b = [12, 6, 3, 7, 21, 5, 7];
+        let c = [12, 6, 3, 7, 21, 5, 7];
+        let d = [];
+        let e = "dfgfdgfd";
+        // console.log(tryRemoveFromArray(arr, 2));
+        document.write(tryRemoveFromArray(arr, 2) + "<br>");
+        document.write(tryRemoveFromArray(a, 0) + "<br>");
+        document.write(tryRemoveFromArray(b, 7) + "<br>");
+        document.write(tryRemoveFromArray(c, -2) + "<br>");
+        document.write(tryRemoveFromArray(d, 2) + "<br>");
+        document.write(tryRemoveFromArray(e, 2) + "<br>");
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

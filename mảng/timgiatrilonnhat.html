@@ -10,8 +10,8 @@
 <body>
     <script>
         function max(arr) {
-            if (arr == null && arr.length <= 0) {
-                return;
+            if (!Array.isArray(arr) || arr.length == 0) {
+                return 'Khong phai hoac mang khong co gia tri';
             }
             let max = arr[0];
             let index = 0;
@@ -25,7 +25,7 @@
             return c;
         }
         var x = [-3, 4, 7, 9, 10];
-        var x1 = [];
+        var x1 = [1]
         document.write(max(x) + '<br>');
         document.write(max(x1));
 
