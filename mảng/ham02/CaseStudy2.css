@@ -1,0 +1,162 @@
+/* font chữ */
+@import url("https://fonts.google.com/specimen/Lobster");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Gamja Flower";
+  font-size: 30px;
+  color: #222;
+}
+/* màu của bảng */
+.navbar {
+  background-color: rgb(109, 241, 131) !important;
+}
+/* màu chữ */
+.navbar li a {
+  color: rgb(10, 12, 4) !important;
+}
+/* đưa chuột vào là chuyển sang màu đỏ */
+.navbar li a:hover {
+  color: rgb(226, 19, 19) !important;
+}
+.carousel-inner img {
+  width: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 20%;
+  color: rgb(114, 20, 20);
+}
+.carousel-caption h1 {
+  font-size: 400%;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 15px #000;
+  color: rgb(54, 199, 18);
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  text-shadow: 2px 2px 10px #000;
+  color: rgb(15, 236, 33);
+}
+.btn-primary {
+  background-color: rgb(169, 233, 21);
+  border: 1px solid rgb(218, 21, 21);
+  color: rgb(231, 27, 197);
+}
+.btn-primary:hover {
+  background-color: rgb(17, 194, 76);
+  border: 1px solid rgb(192, 8, 8);
+  color: rgb(194, 26, 26);
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+  color: rgb(8, 82, 47);
+}
+.welcome hr {
+  border-top: 2px solid rgba(34, 235, 15, 0.6);
+  width: 95%;
+  margin-bottom: 2rem;
+}
+
+.fa-coffee {
+  font-size: 4em;
+  margin: 1rem;
+  color: rgb(22, 160, 56);
+}
+.fun {
+  width: 100%;
+}
+.social a {
+  font-size: 3em; /*1em = 16px*/
+  padding: 3rem; /*1rem = 1 "font-size" */
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-google-plus-g {
+  color: #235bc4;
+}
+.fa-instagram {
+  color: #eb112e;
+}
+
+footer {
+  background-color: #5cf304;
+  color: #0f0c0c;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+}
+.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+}
+/*Media Query*/
+@media (max-width: 992px) {
+  .carousel-caption {
+    top: 20%;
+  }
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+  .carousel-caption h3 {
+    font-size: 160%;
+  }
+  .carousel-caption .btn {
+    font-size: 120%;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 20%;
+  }
+  .carousel-caption h1 {
+    font-size: 220%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    padding-bottom: 0.2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 10%;
+  }
+  .carousel-caption h1 {
+    font-size: 150%;
+  }
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+}
+
+.image-wrapper {
+  height: 450px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.border-top-bottom {
+  border-top: 1px solid #8a8a8a;
+  border-bottom: 1px solid #8a8a8a;
+  padding: 20px 10px;
+}
