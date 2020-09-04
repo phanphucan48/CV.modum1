@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <input type="text " id="td_input1" placeholder="input number" />
+        </td>
+        <td><input type="text" id="td_input2" placeholder="input number" /></td>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" onclick="sum()">Addition(+)</button>
+        </td>
+        <td>
+          <button type="button" onclick="minus()">Subtraction(-)</button>
+        </td>
+        <td>
+          <button type="button" onclick="multiply()">Multiplication(X)</button>
+        </td>
+        <td>
+          <button type="button" onclick="divison()">Divison(/)</button>
+        </td>
+      </tr>
+    </table>
+    <div id="result"></div>
+    <script>
+      function sum() {
+        const Input_1 = document.getElementById("td_input1").value;
+        const Input_2 = document.getElementById("td_input2").value;
+
+        sum = parseInt(Input_1) + parseInt(Input_2);
+        document.getElementById("result").innerHTML = "Result :" + sum;
+      }
+      function minus() {
+        const Input_1 = document.getElementById("td_input1");
+        const Input_2 = document.getElementById("td_input2");
+
+        minus = Input_1.value - Input_2.value;
+        document.getElementById("result").innerHTML = "Result :" + minus;
+      }
+      function multiply() {
+        const Input_1 = document.getElementById("td_input1");
+        const Input_2 = document.getElementById("td_input2");
+
+        multiply = Input_1.value * Input_2.value;
+        document.getElementById("result").innerHTML = "Result : " + multiply;
+      }
+      function divison() {
+        const Input_1 = document.getElementById("td_input1");
+        const Input_2 = document.getElementById("td_input2");
+
+        divison = Input_1.value / Input_2.value;
+        document.getElementById("result").innerHTML = "Result :" + divison;
+      }
+    </script>
+  </body>
+</html>
