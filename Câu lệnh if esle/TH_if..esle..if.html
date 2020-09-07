@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let username = prompt("Xin nhập tên ?");
+      if (username == "Admin") {
+        let password = prompt("Xin nhập password ?");
+        if (password == "TheMaster") {
+          alert("xin chào");
+        } else if (password === "") {
+          alert("Thoat ra");
+        } else alert("Sai mật khẩu.");
+      } else if (username === "") {
+        alert("thoat ra");
+      } else alert("Tôi không biêt bạn");
+    </script>
+  </body>
+</html>
