@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      while (true) {
+        let doCHienTai = +prompt("nhap do C");
+        if (doCHienTai > 100) {
+          alert("xin hay giam nhiet do");
+          true;
+        } else if (doCHienTai < 20) {
+          alert("xiin hay tang nhiet do");
+          true;
+        } else if (doCHienTai <= 100 || doCHienTai >= 20) {
+          alert(" nhiet do binh thuong ");
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>
