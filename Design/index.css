@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1400px;
+}
+
+body {
+  width: 100%;
+}
+.grid-item_text1 {
+  margin-left: 1px;
+}
+.grid-item img {
+  margin-left: 0;
+  height: 758px;
+  width: 683px;
+}
+
+.header {
+  background-image: url("/imgager/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  height: 935px;
+}
+.header::before {
+  content: "";
+  background-image: url("/imgager/luonsongtren1.png");
+  position: absolute;
+  top: -9px;
+  width: 100%;
+  height: 170px;
+}
+.header::after {
+  content: "";
+  background-image: url("/imgager/Luonsongduoi.png");
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  bottom: 0;
+}
+.titles {
+  width: 100%;
+  position: absolute;
+  top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Groud1 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.titles_menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.titles_input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0px 0px 0px 300px;
+}
+
+.titles_button {
+  position: relative;
+}
+.titles_button input {
+  padding: 10px;
+  border-radius: 20px;
+}
+.titles_button button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 15px;
+  top: 5px;
+}
+
+.titles_button button img {
+  width: 30px;
+}
+.titles_input a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #54524f;
+}
+img {
+  margin-left: 50px;
+}
+#input_search {
+  background-color: #d4cfc8;
+  outline: none;
+}
+#search {
+  outline: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: red;
+}
+
+.Groud1_Text h1 {
+  width: 58%;
+  font-size: 66px;
+  line-height: 64px;
+  margin-left: 70px;
+  color: #e2a355;
+  text-shadow: 5px -1px 7px #54524f;
+}
+.Groud1_Text span {
+  font-size: 20px;
+  margin-left: 75px;
+  color: #54524f;
+}
+.Groud1_Text button {
+  font-size: 18px;
+  width: 177px;
+  height: 41px;
+  border: none;
+
+  border-radius: 20px;
+  cursor: pointer;
+  color: #54524f;
+  font-weight: bold;
+  margin: 20px 119px 14px 70px;
+}
+.Groud1_Text button:hover {
+  color: white;
+  background-color: #54524f;
+}
+.Groud1_Text h5 {
+  width: 35%;
+  margin-top: 10px;
+  margin-left: 69px;
+  color: #54524f;
+}
+.groud2 {
+  position: relative;
+  background-image: url("/imgager/shadow..jpg");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-y: bottom;
+  background-color: white;
+}
+/* .groud2::before {
+  position: absolute;
+  content: "";
+  background-image: url("/imgager/shadow..jpg");
+  position: absolute;
+  width: 500px;
+  height: 160px;
+  bottom: 0;
+} */
+
+.groud2_header {
+  text-align: center;
+  font-size: 35px;
+  color: #e2a355;
+}
+.groud2_titles {
+  text-align: center;
+  padding-top: 10px;
+  color: #9d9792;
+  font-size: 30px;
+}
+.conten_all {
+  display: flex;
+  padding-top: 80px;
+}
+.conten_groud {
+  width: 100%;
+}
+.conten_groud_text {
+  color: white;
+  padding-left: 50px;
+  background-color: #7f7770;
+  width: 340px;
+  margin-left: 51px;
+  height: 123px;
+  font-size: 15px;
+  margin: -8px 0px 2px 79px;
+  padding: 2px 30px 0px 1px;
+}
+.conten_groud_span {
+  padding-top: 10px;
+  font-size: 15px;
+}
+.conten_groud_button {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.conten_groud_button button {
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #54524f;
+  color: white;
+  font-weight: bold;
+}
+.conten_groud_button button:hover {
+  background-color: #e2a355;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+.grid-item {
+  height: 0;
+  width: 60%;
+}
+.grid-item img {
+  height: 580px;
+}
+
+.grid-item_text {
+  background-color: #54524f;
+}
+.grid-item_all {
+  padding: 79px 157px 133px 166px;
+}
+.text_h1 {
+  padding-left: 40px;
+  color: white;
+}
+.text_h1 h1 {
+  font-size: 32px;
+  padding: 0 298px 0 0;
+}
+.text_span {
+  padding: 24px 277px 16px 40px;
+}
+
+.text_span span {
+  font-size: 20px;
+  padding: 0px 320px 8px 36px;
+  color: white;
+}
+.text_button {
+  padding-top: 20px;
+  padding-left: 40px;
+  margin-bottom: 49px;
+}
+.text_button button {
+  height: 40px;
+  width: 170px;
+  border-radius: 20px;
+  background-color: #e2a355;
+  cursor: pointer;
+  font-weight: bold;
+}
+.text_button button:hover {
+  background-color: #99928d;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item_text1 {
+  background-color: #deb37e;
+}
+
+.groud5 {
+  width: 100%;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  position: relative;
+  background-color: #99928d;
+  color: white;
+  background-image: url("/imgager/shadow.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-y: center;
+}
+.groud5_h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.groud5::before {
+  content: "";
+  background-image: url("/imgager/luonsongtren1.png");
+  position: absolute;
+  top: -9px;
+  width: 100%;
+  height: 170px;
+}
+.groud5::after {
+  content: "";
+  background-image: url("/imgager/Luonsongduoi.png");
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  bottom: 0;
+}
+.groud5_span {
+  font-size: 35px;
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 70px;
+}
+.groud6 {
+  position: relative;
+}
+.groud6_img img {
+  width: 1366px;
+  margin-left: 0px;
+}
+.groud6_span {
+  position: absolute;
+  padding-left: 396px;
+  padding-bottom: 95px;
+  width: 69%;
+  height: 100%;
+  top: 463px;
+  left: 421px;
+}
+.groud6_explore {
+  font-size: 100px;
+  color: #e2a355;
+  line-height: 64px;
+  margin-left: 70px;
+  color: #deb37e;
+  text-shadow: 5px -1px 7px #54524f;
+}
+.groud6_word {
+  font-size: 92px;
+  text-shadow: 5px -1px 7px #b4b1ad;
+}
+.groud6::before {
+  content: "";
+  background-image: url("/imgager/luonsongtren1.png");
+  position: absolute;
+  top: -9px;
+  width: 1366px;
+  height: 170px;
+  left: 0;
+}
+.groud6::after {
+  content: "";
+  background-image: url("/imgager/Luonsongduoi.png");
+  position: absolute;
+  width: 1365px;
+  height: 160px;
+  bottom: 0;
+  left: 0;
+}
+.groud7 {
+  display: flex;
+}
+.groud7_left {
+  width: 100%;
+  padding-left: 35px;
+}
+.groud7_left_h1 {
+  font-size: 30px;
+  color: #deb37e;
+}
+.groud7_left_span {
+  font-size: 26px;
+  padding-top: 30px;
+}
+.groud7_conten {
+  width: 100%;
+  padding-left: 35px;
+}
+.groud7_conten_h1 {
+  font-size: 30px;
+  color: #deb37e;
+}
+
+.groud7_conten_span {
+  font-size: 26px;
+  padding-top: 30px;
+}
+.groud7_right {
+  width: 100%;
+  padding-left: 35px;
+}
+.groud7_right_h1 {
+  font-size: 30px;
+  color: #deb37e;
+}
+.groud7_right_span {
+  font-size: 26px;
+  padding-top: 30px;
+}
+.groud8 {
+  background-image: url("/imgager/Shadow1.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-x: right;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.groud8_h1 {
+  font-size: 53px;
+  text-align: center;
+}
+.groud8_span {
+  font-size: 50px;
+}
+.groud9 {
+  text-align: center;
+  background-color: #deb37e;
+  position: relative;
+}
+.groud9::before {
+  content: "";
+  background-image: url("/imgager/luonsongtren1.png");
+  position: absolute;
+  top: -55px;
+  width: 100%;
+  height: 170px;
+  right: 0;
+}
+.groud9::after {
+  content: "";
+  background-image: url("/imgager/Luonsongduoi.png");
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  bottom: 0;
+  left: 0;
+}
+.groud9_h1 {
+  font-size: 50px;
+  padding-top: 146px;
+}
+.groud9_span {
+  padding-top: 40px;
+  font-size: 45px;
+  padding-bottom: 74px;
+}
+.groud9_button {
+  padding-top: 40px;
+  padding-bottom: 230px;
+}
+.groud9_button input {
+  height: 50px;
+  width: 500px;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 20px;
+}
+.groud9_button button {
+  height: 50px;
+  width: 170px;
+  border-radius: 20px;
+  outline: none;
+  margin-left: -30px;
+  background-color: #54524f;
+  color: white;
+  cursor: pointer;
+}
+.groud9_button button:hover {
+  background-color: #b4b1ad;
+  color: #000;
+}
+.groud10 {
+  width: 100%;
+  display: flex;
+  background-color: #99928d;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  padding-left: 70px;
+  position: relative;
+}
+.groud10::before {
+  content: "";
+  background-image: url("/imgager/luonsongtren1.png");
+  position: absolute;
+  top: -55px;
+  width: 100%;
+  height: 170px;
+  right: 0;
+}
+
+.groud10_left {
+  width: 40%;
+  cursor: pointer;
+}
+
+.groud10_left_h1 {
+  font-size: 16px;
+}
+.groud10_left_h1:hover {
+  color: #deb37e;
+}
+.groud10_left_span {
+  font-size: 30px;
+}
+.groud10_left_span:hover {
+  color: #deb37e;
+}
+.groud10_left_continued {
+  padding-left: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.groud10_left_continued_h1:hover {
+  color: #deb37e;
+}
+.groud10_left_continued_span {
+  font-size: 30px;
+}
+.groud10_left_continued_span:hover {
+  color: #deb37e;
+}
+.groud10_center {
+  padding-left: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.groud10_center_h1:hover {
+  color: #deb37e;
+}
+.groud10_center_span {
+  font-size: 30px;
+}
+.groud10_center_span:hover {
+  color: #deb37e;
+}
+
+.groud10_right {
+  padding-left: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.groud10_right_h1:hover {
+  color: #deb37e;
+}
+.groud10_right_span {
+  font-size: 30px;
+}
+.groud10_right_span:hover {
+  color: #deb37e;
+}
+.icon {
+  font-size: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 375px) {
+  body {
+    background-color: lightblue;
+  }
+  /* .titles_menu {
+    width: 335%;
+  }
+  .titles_input {
+    width: 100%;
+    padding-right: 2121px;
+  }
+  .header {
+    background-repeat: no-repeat;
+  } */
+}
