@@ -1,0 +1,480 @@
+* {
+  box-sizing: border-box;
+
+  font-family: "Open Sans", serif;
+}
+
+.head {
+  background-color: brown;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 10%;
+  padding: 0 0 0 333px;
+  padding: 0 0 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: none;
+  padding: 0 0 0 350px;
+  margin: -4px 0 0 2px;
+  z-index: -999;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #df7a07;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.topnav .search-container button:hover {
+  background: none;
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  .topnav {
+    padding: 0 0 0 0;
+    margin: 0 0 0 -11px;
+  }
+  .Conten {
+    margin-top: 82px;
+  }
+  .Conten_h1 {
+    margin: -66px 0 0 3px;
+  }
+  .Conten_h1 h1 i {
+    font-size: 30px;
+    padding: 0 0 0 94px;
+  }
+  .Conten_h1 h3 {
+    font-size: 30px;
+    margin: -226px 0px 0px 16px;
+  }
+}
+.bander {
+  height: 30%;
+  width: 100%;
+}
+.bander img {
+  width: 100%;
+  height: 550px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  height: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+.menu_left {
+  width: 50%;
+  margin: -32px 0 0 0px;
+}
+.menu_right {
+  background-image: url(image/backgroun.png);
+  width: 50%;
+  margin: -32px 0 0 0px;
+}
+.menu_right p {
+  font-size: 37px;
+  padding: 0 0 0 60px;
+  font-weight: bold;
+  color: brown;
+}
+.menu_right h3 {
+  margin: -521px 0px 0 65px;
+  font-size: 24px;
+  color: brown;
+  text-shadow: -16px 20px 9px black;
+}
+.menu_button {
+  height: 40px;
+  width: 152px;
+  font-size: 0px;
+  padding: 0px 0px 0px 39px;
+  margin: -584px 13px 0 124px;
+}
+.menu_button button {
+  padding: 5px 10px 0 17px;
+  margin: -15px 0 0px 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: orangered;
+}
+.search-container input {
+  height: 50px;
+}
+.search-container button {
+  height: 50px;
+}
+.search-container button:hover {
+  background-color: orangered;
+}
+.sidenav {
+  z-index: 999;
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  background-color: orangered;
+}
+
+#about {
+  top: 20px;
+  background-color: #4caf50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196f3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  height: 30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+.bander {
+  background-image: url(image/backgroun.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75%;
+}
+.menu {
+  display: flex;
+  color: white;
+  background-image: url(image/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 2px 0px 0px 76px;
+}
+#email {
+  padding: 20px 17px 4px 15px;
+  margin: 22px 14px 8px 30px;
+  border-radius: 10px;
+}
+#sub {
+  padding: 20px 17px 4px 15px;
+  margin: 22px 14px 8px 30px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}
+#sub input {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: none;
+}
+
+#sub input:hover {
+  color: brown;
+}
+.food {
+  display: flex;
+  text-align: center;
+  background-image: url(image/91227800.png);
+  font-weight: bold;
+  color: floralwhite;
+  justify-content: space-around;
+}
+.menu_input {
+  margin: 0 0 0 -25px;
+}
+.bander_title {
+  text-align: center;
+  /* border-color: chartreuse; */
+  background-color: bisque;
+  /* width: 50%; */
+  color: brown;
+  text-shadow: 6 10 BLACK;
+  text-shadow: -3px 13px 11px black;
+  padding: 1px 0 0 59px;
+}
+.search-container button i:hover {
+  color: #000;
+  background-color: burlywood;
+}
+@media screen and (max-width: 375px) {
+  .topnav {
+    padding: 1px 6px 6px 40px;
+    margin: 0px 0px 0 -10px;
+  }
+  .menu_h1 {
+    display: none;
+  }
+  .menu_input {
+    margin: 0 0 0 -110px;
+  }
+}
