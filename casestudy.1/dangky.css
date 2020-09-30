@@ -19,7 +19,7 @@ body {
 
 .container {
   display: flex;
-  background-image: url("/images/bg-intro-desktop.png");
+  background-image: url("image/caffe.png");
   background-color: brown;
   min-width: 520px;
   max-width: 1440px;
@@ -31,7 +31,8 @@ body {
 .content_left {
   padding: 350px 0 0 0px;
   flex: 50%;
-  color: white;
+  color: brown;
+  text-shadow: -7px 7px 5px black;
 }
 
 .content_left_h1 h1 {
